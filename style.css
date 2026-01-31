@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: hsl(275, 100%, 97%) font-family "Work Sans", sans-serif;
+}
+
+body p {
+  font-size: 16px;
+}
+
+.header {
+  width: 100%;
+  height: 350px;
+  background-image: url(./assets/images/background-pattern-desktop.svg);
+  display: inline-block;
+  min-width: 375px;
+  max-width: 1440px;
+}
+
+h1 {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 60px;
+}
+
+.container {
+  width: 50%;
+  height: auto;
+  background-color: white;
+  margin: auto;
+  padding: 10px;
+  border-radius: 15px;
+  margin-top: 10%;
+  min-width: 375px;
+  max-width: 1440px;
+}
+
+button {
+  width: 50%;
+  height: auto;
+  padding: 10px;
+  background: none;
+  border: 0;
+  outline: 0;
+  display: inline;
+}
+
+.accordion {
+  background: transparent;
+  width: 100%;
+  border-radius: 10px;
+  font-family: sans-serif;
+  margin: 20px auto;
+}
+
+.accordion-header {
+  border: none;
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: 0;
+  transition: background 0.3s ease;
+  background-color: transparent;
+  border: 0;
+}
+
+.accordion-header:hover {
+  color: purple;
+}
+
+.accordion-content {
+  max-height: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  background: transparent;
+  padding: 0 5px;
+  color: rgba(102, 102, 102, 0.599);
+  margin-left: 5px;
+}
+
+.accordion-content p {
+  margin: 15px 0;
+}
+
+.accordion-header.active + .accordion-content {
+  max-height: 200px;
+  overflow: visible;
+}
+
+
+.accordion-header.active img {
+  content: "./assets/images/icon-minus-svg";
+}
+
+.attribution {
+  width: 100%;
+  text-align: center;
+}
